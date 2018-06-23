@@ -1,0 +1,37 @@
+<div class="ajax-link-wrap">
+    <ul id="categories">
+        {{#categories}}
+        <li class="category-nav">
+            <a href="{{href}}">{{name}}</a>
+        </li>
+        {{/categories}}
+    </ul>
+    <h1 id="category"><a href="{{category.href}}">{{category.name}}</a></h1>
+    <ul id="project-list">
+        {{#projects}}
+        <li class="project-wrap">
+            <p class="project-name"><a href="{{href}}">{{title}}</a></p>
+        </li>
+        {{/projects}}
+    </ul>
+</div>
+<div id="project-content">
+    <h2 id="project-title">{{project.title}}</h2>
+    <div id="project-intro">{{{project.intro}}}</div>
+    <ul id="project-imgs">
+        {{#project.imageUrls}}
+        <li class="project-img">
+            <img src="{{.}}" />
+        </li>
+        {{/project.imageUrls}}
+    </ul>
+    <div id="project-descriptions">
+        <ul class="project-descriptions-list">
+            {{#project.descriptions}}
+            <li class="project-des">
+                {{.}}
+            </li>
+            {{/project.descriptions}}
+        </ul>
+    </div>
+</div>

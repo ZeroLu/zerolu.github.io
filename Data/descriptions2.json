@@ -1,0 +1,115 @@
+{
+	"help":"test",
+    "categories":["Design+Tech","Research+Thoughts","Art+Life"],
+	"contents":[
+		{
+			"category":"Design+Tech",
+			"projects":[
+				{
+					"title":"Design & Develop for 35th Anniversary of School of Management of ZJU",
+					"intro":"I was invited by School of Management of Zhejiang University to design & develop the featured webpage for them. It should not only served as a promotion page, but also be interactive enough to remind the alumni of the upcoming events.",
+					"descriptions":[
+						"One of the design proposals are using the featured color of School of Management to form a traditional Chinese style.",
+						"To enable users to navigate and switch between different blocks easily, I got inspirations from traditional clocks to design a scroll panel. I used plain JavaScript to achieve this.",
+						"Clear explanations and documentations are needed to convey the design ideas, especially to clients that don’t have a lot of knowledge of design."
+					],
+                  "pics":["1.png","2.png","3.png"]
+				},
+				{
+					"title":"Mail as A Service Mobile Development",
+					"intro":"As this is a company project, I can’t talk about the detail of the work. I did have a good time working in Neteas Inc. I learned a lot from my amazing senior colleagues and got to know a lot more about the R&D and operation process of a product in a big company. It’s thrilled to see that I can improve the lives of tens of millions of users through my work.",
+					"descriptions":[
+					],
+                  "pics":["1.jpg"]
+				},
+				{
+					"title":"123bmb.com UI&UX Design",
+					"intro":"123bmb.com is a web-based club registration service that my team has developed and operated. As the CEO, designer, product manager and front-end developer, I poured as many details and passion into this product as possible.",
+					"descriptions":[
+					]
+				},
+				{
+					"title":"123bmb.com Design Testing",
+					"intro":"This project is designing one of the products from my projects. In the design process, we made full use of the prototyping tools and testing tools, and in the end, a product which is excellent in UE was developed. Lo-fi prototype testing, hi-fi prototype, test-eye track test, through these steps, our understanding about user needs and user behaviors were improved step by step, and the product was evolving too.",
+					"descriptions":[
+					],
+                  "pics":["1.png","2.png","3.png"]
+				},
+				{
+					"title":"WeClass UI&UX Design",
+					"intro":"WeClass is an app specially created for Chinese students to send digital classmate notes to friends. WeClass bring classmate notes to the era of social network by providing a tool for students to create classmate notes of their own style and share in their circles. I did careful user study and deep user interview for this app, and applied the results to the feature design and UI&UX design.",
+					"descriptions":[
+					],
+                  "pics":["1.png","2.png","head.jpg"]
+				},
+				{
+					"title":"Personal Website Design & Develop",
+					"intro":"This is my first personal website. I was a stranger to Three.js and blender. But I managed to learn this to create the effects in my mind in several weeks. The construction of the site only took one night and will get better later.",
+					"descriptions":[
+					]
+				},
+				{
+					"title":"MATS BOX Concept Design",
+					"intro":"Mats Box is express package for toy transportation. The material is nontoxic foam which absorbs impact without the need for infilling. When the toys arrive home, the express package can be used as mats to protect the baby. In the whole process, pollution, waste and material consumption are reduced greatly.",
+					"descriptions":[
+					],
+                  "pics":["1.png","2.png","3.png"]
+				}
+			]
+		},
+		{
+			"category":"Research+Thoughts",
+			"projects":[
+				{
+					"title":"Interactions in Immersive Collaborative Virtual Environment",
+					"intro":"The project was led by Suranga Nanayakkara from MIT Media Lab, collaborated with researchers from SingTel, the second largest wireless company in Asia. In this project, we designed a system in virtual reality environment to boost collaborative experience in an immersive way. Using C++ and OpenFrameworks, I completed the gesture recognition and the 3D environment.",
+					"descriptions":[
+					],
+                  "pics":["1.png","2.png"]
+				},
+				{
+					"title":"Urban Pattern Analysis Using GPS Data of Yellow Cab",
+					"intro":"This project is directed by Prof. Zhang Kejun, by visualizing the GPS data of large number of yellow cabs, we analyzed the urban planning info, and the living habit amd main tourist attractions of San Francisco. My work includes the getting and processing of the data, visualizing and analyzing the data. This project received recognition from multiple professors in State Key Lab of CAD&CG and got me admitted into the lab.",
+					"descriptions":[
+					],
+                  "pics":["1.png","2.png","3.png"]
+				}
+			]
+		},
+		{
+			"category":"Art+Life",
+			"projects":[
+				{
+					"title":"Graphic Work",
+					"intro":"Some of my graphic-related work. Drawing, painting, logo design etc.",
+					"descriptions":[
+					],
+                  "pics":["1.png","2.png","3.png","4.png","6.jpg"]
+				},
+				{
+					"title":"Everyday Photograph",
+					"intro":"I love observing everything around me and capturing the beauty I found.",
+					"descriptions":[
+					],
+                    "pics":["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg"]
+				},
+				{
+					"title":"Computer Graphic Art",
+					"intro":"In the process of learing industrial design, I mastered modelling, rendering and image processing software. I pursue creating vivid visual effects using these software. The helicopters in the two CGAs above are all rendered and adjusted in Photoshop according to the style of the whole image.",
+					"descriptions":[
+					],
+                  "pics":["1.png","2.png"]
+
+				},
+				{
+					"title":"VAR Club",
+					"intro":"I founded <a href='https://www.facebook.com/groups/400594136816932/' target='_blank' >VAR club</a> this September in TU/e because I am into these technologies and found a lot are, too. VAR is all about Virtual Reality and Augmented Reality. With a geeky name, VAR is a place where enthusiasts can not only share, play and talk freely, but also do projects which they love. It’s still small, but we will grow it.",
+					"descriptions":[
+					],
+                  "pics":["1.jpg"]
+				}
+			]
+		}
+	]
+	
+}

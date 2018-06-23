@@ -1,0 +1,90 @@
+{
+    "help":"test",
+    "categories":["Portfolio"],
+    "contents":[
+        {
+            "category":"Portfolio",
+            "projects":[
+                {
+                    "titleEng":"TangoAR",
+                    "titleChn":" ",
+                    "shortDescription":"Phone based optical AR headset",
+                    "videoHref":"TODO",
+                    "longDescription":"Tango AR is the second version of Lite AR, which is my bachelor graduation project. The optics is designed to be cheap and easy to source for DIYers. The ID design is comfortable and elegant. With the help of Tango technology, this could be the most affordable yet very powerful AR headset in this world.",
+                    "development":"Unity, 3D printing, optics",
+                    "role":"Designeer of optics, software and ID",
+                    "growth":"Prototyping, fast learning, resources gathering",
+                    "date":"2015 winter till now",
+                    "mainColor":"TODO",
+                    "contrastColor":"TODO"
+                },
+                {
+                    "titleEng":"VRText",
+                    "titleChn":" ",
+                    "shortDescription":"Mobile VR text input solution",
+                    "videoHref":"http://www.56.com/iframe/MTQxNTgxMTU0",
+                    "longDescription":"Text input has always been hard in VR, especially mobile VR. This hinders so many applications including payment, login etc. In this project, I researched in this field, carried out experiments.",
+                    "development":"NyARToolkit, Unity, Laser cutting",
+                    "role":"Main developer",
+                    "growth":"Visual effects realization, development skills",
+                    "date":"2016 Spring and summer",
+                    "mainColor":"#5f81af",
+                    "contrastColor":"#dfe285"
+                },
+                {
+                    "titleEng":"HUDAR",
+                    "titleChn":" ",
+                    "shortDescription":"Social car based on Augmented Reality",
+                    "videoHref":"https://player.vimeo.com/video/162920620?byline=0&portrait=0",
+                    "longDescription":"On the road, due to constraints on communications, drivers tend to misunderstand each other. HUDAR add a digital communication channel between cars, and show user the information gracefully with the help of AR technology. While achieving all of this, HUDAR is very affordable for it only utilizes a phone and a set of simple optics. This project is done together with Chao Wang, a Ph.D student in TU/e. I am in charge of prototyping and video making.",
+                    "development":"NyARToolkit, Unity, Laser cutting",
+                    "role":"Main developer",
+                    "growth":"Visual effects realization, development skills",
+                    "date":"2016 Spring and summer",
+                    "mainColor":"#5f81af",
+                    "contrastColor":"#dfe285"
+                },
+                {
+                    "titleEng":"Balavator",
+                    "titleChn":" ",
+                    "shortDescription":"An icebreaker for strangers",
+                    "videoHref":"https://player.vimeo.com/video/166437859?byline=0&portrait=0",
+                    "longDescription":"Elevator awkwardness is a kind of awkward feeling many people have when being inside an elevator with stranger(s). Balavator tries to resolve this subtle emotional discomfort with games.Balavator is a balancing game. We utilize camera (background extraction and blob detection with Processing) to capture people's movement and simulate a seesaw style balancing box with Unity.User feedback plays a key role in iterations: We used low-fidelity prototype to test feedbacks and developed high-fidelity prototype based on that. Then we asked people who haven't tried the project to use it. To our surprise, many people failed to understand the game and distracted by some game elements. We made changes accordingly, which included increasing perspective, increasing shadows and improving robustness. The usability and user acceptance improved a lot.",
+                    "development":"Processing, Unity, Machine learning",
+                    "role":"Main developer",
+                    "growth":"Fast development，prototyping，fast iteration",
+                    "date":"2016 spring",
+                    "mainColor":"#d6a666",
+                    "contrastColor":"#c1eeff"
+                },
+                {
+                    "titleEng":"IsThatYou",
+                    "titleChn":" ",
+                    "shortDescription":"Old phone based home security network",
+                    "videoHref":"https://www.youtube.com/embed/dU2K3Vfaa9E",
+                    "longDescription":"We got inspirations from discarded phones and designed a home security network utilizing cameras and microphones on phone. To make the interface intuitive and attractive, we designed maps and cartoon characters.",
+                    "development":"Socket.io, JS",
+                    "role":"Project management, interface design(par)",
+                    "growth":"team motivation, fast development",
+                    "date":"2015 winter",
+                    "mainColor":"#6b7de3",
+                    "contrastColor":"#f54f47"
+                },
+                {
+                    "titleEng":"Flow",
+                    "titleChn":" ",
+                    "shortDescription":"Personal emotional data log visualization",
+                    "videoHref":"https://www.youtube.com/embed/x4hUkb1KXLU",
+                    "longDescription":"This is a collaborative project with Data Visualization team from Philips Design. We explored using new, tangible and artistic ways to visualize the abstract emotion.We did two iterations around the \"Emotion landscape\" concept. We went through stages including emotion research, data wash, Grasshopper modeling and laser cutting. This is also the first time I managed a multi disciplinary team.",
+                    "development":"Excel, Grasshopper, Laser cutting",
+                    "role":"Project management，model exportation",
+                    "growth":"Communication among multi disciplinary team",
+                    "date":"2015 winter",
+                    "mainColor":"#ea2a72",
+                    "contrastColor":"#b1f4f7"
+                }
+            ]
+        }
+    ]
+
+}

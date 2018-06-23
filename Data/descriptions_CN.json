@@ -1,0 +1,91 @@
+{
+    "help":"test",
+    "categories":["Portfolio"],
+    "contents":[
+        {
+            "category":"Portfolio",
+            "projects":[
+                {
+                    "titleEng":"DreamHouse",
+                    "titleChn":"VR建筑设计",
+                    "shortDescription":"在VR中创造梦中家园",
+                    "videoHref":"http://www.56.com/iframe/MTQ1NzU4OTM4",
+                    "longDescription":"在虚拟现实中创建世界一直是我的梦想。在我的硕士毕业设计中，我尽我所能探索了这一可能性。在<i>Dream House—一个所见即所得的VR建筑设计工具</i>中，我独立完成了需求分析、用户研究、原型制作、反复迭代、用户测试等环节。<br />VR内的交互设计，尤其是创意类应用的交互设计，是目前业界的一个难点。在探索的过程中，我发现了很多之前意向不到的问题和机会。整个项目的详细分析请移步我的<a href='https://zhuanlan.zhihu.com/vardesign' target='new'>知乎专栏</a>查看。",
+                    "development":"Unity, VRTK, Triangle.NET",
+                    "role":"设计师、研究员、开发者",
+                    "growth":"研究能力，交互设计能力，开发能力",
+                    "date":"2017 春夏",
+                    "mainColor":"#4e5659",
+                    "contrastColor":"#5bca84"
+                },
+                {
+                    "titleEng":"DisneyAR",
+                    "titleChn":"迪士尼AR头显",
+                    "shortDescription":"AR让你成为绝地武士",
+                    "videoHref":"https://www.youtube.com/embed/WkjVQRWh1RM",
+                    "longDescription":"在<a href='https://www.ximmerse.net/' target='new'>XImmerse</a>工作的期间，我曾作为项目经理，负责与迪士尼合作的AR头显。在整个过程中，我需要带领XImmerse国内技术团队和迪士尼美国团队一起，寻找技术可行性下的最佳方案。沟通并明确需求，制定工作计划，确保项目准时有序地完成。之前养成的良好工作习惯让我得以能很好地处理大量的会议沟通、邮件沟通和团队沟通。<br />在我的工作期间，我们成功打造了POC版本使得项目的高层展示进行顺利并得以落地。我的工作也得到了迪士尼美国团队的肯定和赞许，也获得了公司董事会的关注和肯定。当年年末我评为优秀员工。<br />目前该项目已在D23 Expo 2017上透露了部分细节，相关报道可见于<a href='http://www.insidethemagic.net/2017/07/d23-expo-2017-wield-lightsaber-home-disney-announces-star-wars-jedi-challenge-augmented-reality-system/' target='new'>ITM</a>, <a href='https://www.digitaltrends.com/virtual-reality/star-wars-jedi-challenges-lenovo-headset/' target='new'>Digital Trends</a>, <a href='http://mashable.com/2017/07/15/star-wars-jedi-challenges-augmented-reality/#.rK86Ah2LaqU' target='new'>Mashable</a>, <a href='https://www.theverge.com/2017/7/15/15975882/star-wars-jedi-challenges-holochess-ar-lightsabers-disney-d23-expo-2017' target='new'>TheVerge</a>等。本页面视频源自YouTube，需翻墙查看。",
+                    "development":"Visio, JIRA, Foxmail",
+                    "role":"项目经理",
+                    "growth":"项目管理能力，时间管理能力",
+                    "date":"2016 秋冬-2017 春夏",
+                    "mainColor":"#2d8ebc",
+                    "contrastColor":"#75cef7"
+                },
+                {
+                    "titleEng":"HudAR",
+                    "titleChn":"车+增强现实",
+                    "shortDescription":"基于增强现实的汽车社交",
+                    "videoHref":"http://www.56.com/iframe/MTQxNTgxMTU0",
+                    "longDescription":"在道路上，由于沟通的限制，司机之间容易产生误解。Hud AR在车之间添加了一层虚拟的沟通通道，并利用增强现实技术，将信息优雅地展现给用户。在达到这些目的的同时，Hud AR仅仅使用了一个手机和一组简易的光学装置，价格非常低廉。<br />本项目与TU/e博士生王超一同完成，我主要负责概念设计、原型制作和视频拍摄。此项目被<a href='https://www.newscientist.com/article/2122561-augmented-reality-lets-cars-communicate-to-reduce-road-rage/' target='new'>New Scientist</a>, <a href='https://www.engadget.com/2017/02/25/augmented-reality-may-limit-road-rage/' target='new'>Engadget</a>等多家媒体报道。",
+                    "development":"NyARToolkit, Unity, 激光切割",
+                    "role":"主开发者",
+                    "growth":"视觉效果实现能力，开发能力",
+                    "date":"2016 春夏",
+                    "mainColor":"#5f81af",
+                    "contrastColor":"#dfe285"
+                },
+                {
+                    "titleEng":"LiteAR",
+                    "titleChn":"轻",
+                    "shortDescription":"穷人版Hololens",
+                    "videoHref":"http://www.56.com/iframe/MTQxNTgxNDM4",
+                    "longDescription":"Lite AR是我本科毕业设计，在当时是世界第一款基于智能手机的光学穿透式头戴式增强现实设备，目标是成为穷人版的HoloLens。视频只是一个未完成的Demo视频。一年多之后，类似的概念如<a href='https://holokit.io' target='new'>HoloKit</a>, <a href='https://www.kickstarter.com/projects/aryzon/aryzon-3d-augmented-reality-for-every-smartphone' target='new'>Aryzon</a>等纷纷出现。",
+                    "development":"Vuforia, Unity, 激光切割, 3D打印...",
+                    "role":"光学，软件，人机原型制作",
+                    "growth":"解决业界全新问题的能力，坚持不懈的能力",
+                    "date":"2015 冬至今",
+                    "mainColor":"#8b6142",
+                    "contrastColor":"#d0e653"
+                },
+                {
+                    "titleEng":"Balavator",
+                    "titleChn":"平衡电梯交互游戏",
+                    "shortDescription":"针对电梯尴尬症的交互游戏",
+                    "videoHref":"http://www.56.com/iframe/MTQxNTc5MTk3",
+                    "longDescription":"很多人在与陌生人同处一个电梯时都会避免目光接触，觉得尴尬。Balavator试图用游戏的方式来解决这微妙的情绪不适感。<br />该游戏以平衡为主题，使用摄像头（背景剔除和特征提取）来捕捉人的移动，游戏的平衡箱（用Unity开发）会根据人的位置分布来模拟类似跷跷板的物理效果。<br />用户反馈在迭代中起了很大作用：首先利用低保真原型来测试反馈，在这基础上开发第一版高保真原型，然后请没有接触过项目的人来使用。意料之外的是很多人没有理解游戏原理，并被一些游戏元素干扰。我们做了针对性的改变，包括增强透视、添加阴影、提高鲁棒性等。之后原型的可用性和用户接受度大大提升。",
+                    "development":"Processing, Unity, 机器学习",
+                    "role":"主开发者",
+                    "growth":"快速开发能力，装置制作能力，快速迭代能力",
+                    "date":"2016 春",
+                    "mainColor":"#d6a666",
+                    "contrastColor":"#c1eeff"
+                },
+                {
+                    "titleEng":"Flow",
+                    "titleChn":"流",
+                    "shortDescription":"个人情绪日志可视化",
+                    "videoHref":"http://www.56.com/iframe/MTQxNTgxMjA0",
+                    "longDescription":"该项目与飞利浦设计的数据可视化小组合作完成。<br />我们探索了如何使用新的、可触摸的、充满艺术感的方式来可视化情绪这一抽象的事物。我们围绕“情绪地形”这一概念进行了两次迭代。制作原型时，我们经历了情绪研究、数据清洗、Grasshopper建模、激光切割等阶段。<br />这是我第一次管理一个多元文化的团队。",
+                    "development":"Excel, Grasshopper, 激光切割",
+                    "role":"项目管理，模型输出",
+                    "growth":"多元文化团队内沟通能力",
+                    "date":"2015 冬",
+                    "mainColor":"#ea2a72",
+                    "contrastColor":"#b1f4f7"
+                }
+
+            ]
+        }
+    ]
+
+}
