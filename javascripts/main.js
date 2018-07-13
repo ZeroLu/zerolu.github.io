@@ -182,7 +182,8 @@ var contentHandler = {
             }
         }
         else{
-            console.log("No category");
+            console.log("No category. go to default url");
+	          window.location.href = "index.html?category=0&project=0";
         }
 
         console.log(fetchedData);
