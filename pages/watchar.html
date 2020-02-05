@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Watch AR</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <script type="text/javascript">
+        //window.location.href = 'Portfolio-ZhixiongLu-iamzerolu@gmail.com.pdf'
+    </script>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/index_high_dpi_responsive.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/detail_page.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Volkhov&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/>
+</head>
+
+<body class="custom_scroll_bar">
+<script id="tpl" type="text/template">
+</script>
+<!-- The start of detail page -->
+<main class="detail_page">
+    <a onclick="history.back()" id="back"> </a>
+    <div id="tp-output"></div>
+    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/RCE737G9ZpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    <h2>Key findings</h2>
+     <h4>
+        The physical inputs on the watch can be great supplementary input.
+    </h4>
+    <figure class="left">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/389409982?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </figure>
+    <figure class="right">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/389410360?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </figure>
+    <p>
+        When it comes to easiness of being carried around, smart watch is on par with bare hand. But the physical inputs, including touch screen, rotating bezel and buttons, and haptics feedback (vibration) could increase efficiency of certain tasks greatly. Two promising interaction techniques are touch screen for text input and rotating bezel for picker input. These two can also be combined with 6DoF pointing provided by smart watch.
+    </p>
+    <br>
+    <br>
+    <h4>The limiting movement range of the smart watch needs to be carefully considered</h4>
+    
+    <p>
+        The 6 DoF tracking of smartwatch didn't turned out to be that useful in our tests. This could be because of its limited movement range. Firstly, the tracking volume was limited in our experiments, which required people to raise their arms. On the other hand, the movement of the smartwatch is very limited when both hands were used. Overall, a 6DoF tracked smartwatch is less performant than a 6DoF tracked controller in most tasks like point-and-selecting.
+        <br>
+        For more details of this research, please check out <a href="../ISMAR'19 Demo_WatchAR.pdf">the paper</a>.
+    </p>
+    <!-- FootNote -->
+    <div id="FootNote">©2020 &nbsp;Zhixiong Lu</div>
+</main>
+</body>
+<script>
+    // pull 
+    var contentHandler = {
+        update : function () {
+            console.log(pageData.contents[0]);
+            var template = $('#tpl').html();
+            //IMPORTANT THIS LINE INCLUDES THE DATA FOR THE TEMPLATE, UNIQUE IN ALL THE PAGES
+            // ********************************** //
+            var html = Mustache.to_html(template, pageData.contents[0].smallProjects[0]);
+            // ********************************** //
+            $('#tp-output').html(html);
+           bodyStyler.styleFix();
+        }
+    };
+    var bodyStyler = {
+            styleFix: function(){
+                var body = $('body')
+                var bodyHeight = body.height()
+                console.log(bodyHeight)
+                body.css('top',-bodyHeight*0.1*0.8)
+                .css('height',bodyHeight*0.8)
+                .css('transform','scale(0.8)')
+            }
+        };
+    var pageData = {
+    };
+    //Main function
+    $(function(){
+        console.log(this);
+        $.get('../MyTemplates/detailTpl.html', function(data){
+            $("#tpl").html(data);
+            $.getJSON('../Data/descriptions.json', function(jsonData, status){
+                console.log(status);
+                console.log(jsonData)
+                pageData.contents = jsonData.contents;
+                contentHandler.update();
+            });
+        });
+    });
+
+</script>
+</html>

@@ -1,73 +1,141 @@
-<div class="tp-wrap">
-    <div class="lu-bg"></div>
+<!-- Home_export -->
+<!-- Contact -->
+<!-- <a href="#contact" class="right top text" id="Contact">Contact</a> -->
 
-    <div class="nav" id="nav">
-        <div class="nav-btn">
-            <a href="">
-                <div class="equal-up"></div>
-                <div class="equal-down"></div>
-            </a>
+<main class="frame" id="Home_export">
+    <div id="head">
+        <!-- TagLine -->
+        <div class="subsets center top text" id="TagLine">
+            <span >Hi, I’m Zero Lu.<br></span>
+            <span>An </span>
+            <b class="n156_16-42">XR designer that codes</b>
+            <span>.<br>I also love optics and electronics.<br></span>
         </div>
-        <div class="ajax-link-wrap">
-            <div class="drawer custom_scroll_bar">
-                <ul class="avatar-list">
-                    {{#projects}}
-                    <a href="{{href}}" class="avatar" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('{{thumbnail}}')">
-                        <p>{{titleEng}}</p>
-                    </a>
-                    {{/projects}}
-                </ul>
-            </div>
+        <!-- Logos -->
+        <div class="group" id="Logos">
+            <!-- ISMAR Logo -->
+            <img src="../images/projectImages/2020/logos/ismar logo.png" width="275" height="58" class="center top vector" id="n156_139" alt="ISMAR Demo" />
+            <!-- Disney Logo -->
+            <img src="../images/projectImages/2020/logos/disney logo.png" width="213" height="213" class="center top vector" id="n156_140" alt="Disney" />
+            <!-- Huawei Logo -->
+            <img src="../images/projectImages/2020/logos/huawei logo.png" width="83" height="83" class="center top vector" id="n156_141" alt="Huawei" />
+            <!-- NetEaseLogo -->
+            <img src="../images/projectImages/2020/logos/netease logo.png" width="217" height="81" class="center top vector" id="n156_142" alt="NetEase" />
         </div>
+        <!-- Mouse -->
+        <div class="group" id="mouse">
+            <!-- Rectangle 13 -->
+            <div class="mouse_outer"></div>
+            <!-- Rectangle 14 -->
+            <div class="mouse_inner"></div>
+        </div>
+    </div>    
+    <!-- SectionTitleMiddle -->
+    <div class="center top text" id="SectionTitleMiddle">Projects</div>
+    {{#mainProjects}}
+        <!-- MainProjectCard -->
+        <a class="MainProjectCard" href="{{pageUrl}}">
+            <!-- MainImage -->
+            <img src="{{imageSrc}}"class="MainImage"></img>
+            {{#tags}}
+            <!-- Tag -->
+            <div class="Tag">{{.}}</div>
+            {{/tags}}
+            <!-- ProjectTitle -->
+            <div class="ProjectTitle">{{title}}</div>
+            <!-- ProjectSubtitle -->
+            <div class="ProjectSubtitle">{{subtitle}}</div>
+            <!-- ProjectButton -->
+            <div class="ProjectButton">Read More</div>
+        </a>
+    {{/mainProjects}}
+    
+    {{#smallProjects}}
+    <!-- SmallProjectCard -->
+    <a class="SmallProjectCard" href="{{pageUrl}}">
+        <!-- MainImage -->
+        <img src="{{imageSrc}}" width="400px" height="263px" class="MainImage"></img>
+        <div class="wrapper">
+            {{#tags}}
+            <!-- Tag -->
+            <div class="Tag">{{.}}</div>
+            {{/tags}}
+            <!-- ProjectTitle -->
+            <div class="ProjectTitle">{{title}}</div>
+            <!-- ProjectSubtitle -->
+            <div class="ProjectSubtitle">{{subtitle}}</div>
+            <!-- BorderLine -->
+            <!-- ProjectButton -->
+            <div class="ProjectButton">Read More</div>
+        </div>
+    </a>
+    {{/smallProjects}}
+    <!-- Patents -->
+    <div class="Patents Info" id="n156_115">
+         <!-- SectionTitleLeft -->
+        <h3 class="SectionTitleLeft">Patents (7)</h3>
+        <ul>
+            <li class="InfoText">
+                <a target="_blank" href="https://www.ipfeibiao.com/patent/view/2017218356306.html" class="main">Optical design to achieve huge horizontal field of view with polarization.</a>
+                <span class="addition">Filed Jun 30, 2017</span>
+            </li>
+            <li class="InfoText">
+                <a target="_blank" href="https://www.ipfeibiao.com/patent/view/201780005510X.html" class="main">Efficient text entry technique with touch pad.</a>
+                <span class="addition">Issued Jul 17, 2018</span>
+            </li>
+            <li class="InfoText">
+                <a target="_blank" href="https://www.ipfeibiao.com/patent/view/201721343559X.html" class="main">An affordable way to achieve light field AR display.</a>
+                <span class="addition">Issued Jun 19, 2018</span>
+            </li>
+            <li class="InfoText">
+                <a target="_blank" href="https://www.ipfeibiao.com/patent/view/2017218319398.html" class="main">Optical design to achieve huge horizontal field of view with shutters.</a>
+                <span class="addition">Issued Jul 17, 2018</span>
+            </li>
+            <li class="InfoText">
+                <a target="_blank" href="https://www.ipfeibiao.com/patent/view/2017218356293.html" class="main">Optical design to achieve huge horizontal field of view with naked eye 3d screen.</a>
+                <span class="addition">Issued Jul 17, 2018</span>
+            </li>
+            <li class="InfoText">
+                <a target="_blank" href="https://www.ipfeibiao.com/patent/view/2019101308525.html" class="main">Use CV to detect and track objects in 360 videos for easier video editing.</a>
+                <span class="addition">Filed Feb 20, 2019</span>
+            </li>
+            <li class="InfoText">
+                <a target="_blank" href="https://www.ipfeibiao.com/patent/view/2019106844707.html" class="main">Modify physical keyboard in AR scenarios.</a>
+                <span class="addition">Filed Jul 26, 2019</span>
+            </li>
+        </ul>
+        <!-- MoreButton -->
+        <a style="display: none" onclick="void(0)" class="MoreButton" id="n156_116">+ More</a>            
     </div>
-    <div class="main">
-        <div class="main-pic" style="background-image: url('{{project.imageUrls.mainPicture}}')"></div>
-        <div class="title-block">
-            <p class="eng">
-                {{project.titleEng}}
-            </p>
-            <p class="chn">
-                {{project.titleChn}}
-            </p>
-            <p class="description">
-                {{project.shortDescription}}
-            </p>
-            <div class="decoration">
-                <div class="line"></div>
-                <div class="circle" style="background-color: {{project.mainColor}}"></div>
-            </div>
-        </div>
-        <div class="video-block">
-            <iframe src="{{project.videoHref}}" frameborder="0" allowfullscreen=""></iframe>
-            <!--<iframe src="https://player.vimeo.com/video/177227438?title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-            <!--<video src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/445/7/177227611/576215944.mp4?token=57a6e9c0_0x068ebb9e9f78dc7f49a08a8a177ca46ea0460869" width="560" height="315" preload="auto" controls></video>-->
-            <!--<video src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/445/7/177228163/576218313.mp4?token=57a6ebec_0x4e3184e21888b6e1e022b2c3fd1ef9697da3fc10" width="560" height="315" preload="auto" controls></video>-->
-            <!--<embed src="http://player.56.com/v_MTQxNTc5MTk3.swf" type="application/x-shockwave-flash" width="560" height="470" allowfullscreen="true" allownetworking="all" allowscriptaccess="always"></embed>-->
-        </div>
-        <div class="description-block" style="background-color: {{project.mainColor}}">
-            <p>
-                <!--Long description support rich tect html rendering, so triple moustaches are used-->
-                {{{project.longDescription}}}
-            </p>
-            <ul class="takeaways">
-                <li class="development">{{project.development}}</li>
-                <li class="role">{{project.role}}</li>
-                <li class="growth">{{project.growth}}</li>
-                <li class="date">{{project.date}}</li>
-            </ul>
-        </div>
-        <div class="ajax-link-wrap">
-            <a href="{{project.actionUrls.lastProject}}" class="action action-last-project" style="color: {{project.mainColor}}; display: {{project.actionUrls.lastProject}}"><</a>
-            <a href="{{project.actionUrls.nextProject}}" class="action action-next-project" style="background-color: {{project.contrastColor}}; color: {{project.mainColor}}; display: {{project.actionUrls.nextProject}}">
-                下一个>>
-            </a>
-        </div>
-        <div class="footer">
-            <p class="by"></p>
-            <p class="acknowledgement">
-                Handcrafted with ❤ by Zero Lu
-                <!--<a href="http://www.baidu.com">声明</a>-->
-            </p>
-        </div>
+    <div class="Publication Info" id="">
+         <!-- SectionTitleLeft -->
+        <h3 class="SectionTitleLeft" name="contact">Publication (s)</h3>
+        <ul>
+            <li class="InfoText" id="n156_122">
+                <a target="_blank" href="" class="main">A 6-DoF Trackable Smartwatch for AR Interaction.</a>
+                <strong class="addition">ISMAR ‘19 Demo</strong>
+            </li>
+        </ul>      
     </div>
-</div>
+    <div class="Tool Info" id="">
+         <!-- SectionTitleLeft -->
+        <h3 class="SectionTitleLeft" name="contact">Tools</h3>
+        <ul>
+            <div class="InfoText" id="n156_122">
+                <span class="main">I enjoy designing in Photoshop & Figma, prototyping in Unity, modeling in 3ds Max and crafting web experiences with old school HTML,JS&CSS.</span>
+            </div>
+        </ul>      
+    </div>
+    <div class="Contact Info" id="">
+         <!-- SectionTitleLeft -->
+        <h3 class="SectionTitleLeft" name="contact">Contact</h3>
+        <ul>
+            <div class="InfoText" id="n156_122">
+                <span class="main">You can <a href="mailto:iamzerolu@gmail.com">email</a> me or find me at <a target="_blank" href="https://www.linkedin.com/in/zhixiong-lu-254a69a3/">LinkedIn</a>.</span>
+            </div>
+        </ul>      
+    </div>
+
+    <!-- FootNote -->
+    <div id="FootNote">©2020 &nbsp;Zhixiong Lu</div>
+</main>

@@ -1,0 +1,115 @@
+/*-------------------*/
+#back {
+    background-image: url("https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/4b88/2f94/c5031a08df6acb6c90147add062d71ca");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 70px;
+    top: 65px;
+    display: block;
+    cursor: pointer;
+}
+.ProjectTitleBlock{
+    padding-top: 120px;
+    height: 650px;
+}
+.ProjectTitle{
+    font-family: Volkhov;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+.ProjectSubtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #8F8F8F;
+    margin-bottom: 50px;
+}
+h2 {
+    font-family: Volkhov;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 35px;
+    /* identical to box height, or 97% */
+
+    color: #FFFFFF;
+    margin: 50px 0;
+}
+.ProjectDesc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+    color: rgba(255, 255, 255, 0.8);
+}
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+    color: rgba(255, 255, 255, 0.8);
+    margin: 50px 0;
+}
+figure {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+
+    color: rgba(255, 255, 255, 0.8);
+}
+figure.left {
+    margin-right: 1%;
+}
+figure.left, figure.right {
+    display: inline-block;
+    width: 49%;
+}
+figure.left img, figure.right img {
+    margin: 20px 0 10px 0;
+}
+img {
+    width: 100%;
+    margin: 20px 0;
+}
+figcaption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    /* or 194% */
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

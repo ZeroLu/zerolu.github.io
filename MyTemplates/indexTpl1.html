@@ -1,0 +1,73 @@
+<div class="tp-wrap">
+    <div class="lu-bg"></div>
+
+    <div class="nav" id="nav">
+        <div class="nav-btn">
+            <a href="">
+                <div class="equal-up"></div>
+                <div class="equal-down"></div>
+            </a>
+        </div>
+        <div class="ajax-link-wrap">
+            <div class="drawer custom_scroll_bar">
+                <ul class="avatar-list">
+                    {{#projects}}
+                    <a href="{{href}}" class="avatar" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('{{thumbnail}}')">
+                        <p>{{titleEng}}</p>
+                    </a>
+                    {{/projects}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-pic" style="background-image: url('{{project.imageUrls.mainPicture}}')"></div>
+        <div class="title-block">
+            <p class="eng">
+                {{project.titleEng}}
+            </p>
+            <p class="chn">
+                {{project.titleChn}}
+            </p>
+            <p class="description">
+                {{project.shortDescription}}
+            </p>
+            <div class="decoration">
+                <div class="line"></div>
+                <div class="circle" style="background-color: {{project.mainColor}}"></div>
+            </div>
+        </div>
+        <div class="video-block">
+            <iframe src="{{project.videoHref}}" frameborder="0" allowfullscreen=""></iframe>
+            <!--<iframe src="https://player.vimeo.com/video/177227438?title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+            <!--<video src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/445/7/177227611/576215944.mp4?token=57a6e9c0_0x068ebb9e9f78dc7f49a08a8a177ca46ea0460869" width="560" height="315" preload="auto" controls></video>-->
+            <!--<video src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/445/7/177228163/576218313.mp4?token=57a6ebec_0x4e3184e21888b6e1e022b2c3fd1ef9697da3fc10" width="560" height="315" preload="auto" controls></video>-->
+            <!--<embed src="http://player.56.com/v_MTQxNTc5MTk3.swf" type="application/x-shockwave-flash" width="560" height="470" allowfullscreen="true" allownetworking="all" allowscriptaccess="always"></embed>-->
+        </div>
+        <div class="description-block" style="background-color: {{project.mainColor}}">
+            <p>
+                <!--Long description support rich tect html rendering, so triple moustaches are used-->
+                {{{project.longDescription}}}
+            </p>
+            <ul class="takeaways">
+                <li class="development">{{project.development}}</li>
+                <li class="role">{{project.role}}</li>
+                <li class="growth">{{project.growth}}</li>
+                <li class="date">{{project.date}}</li>
+            </ul>
+        </div>
+        <div class="ajax-link-wrap">
+            <a href="{{project.actionUrls.lastProject}}" class="action action-last-project" style="color: {{project.mainColor}}; display: {{project.actionUrls.lastProject}}"><</a>
+            <a href="{{project.actionUrls.nextProject}}" class="action action-next-project" style="background-color: {{project.contrastColor}}; color: {{project.mainColor}}; display: {{project.actionUrls.nextProject}}">
+                下一个>>
+            </a>
+        </div>
+        <div class="footer">
+            <p class="by"></p>
+            <p class="acknowledgement">
+                Handcrafted with ❤ by Zero Lu
+                <!--<a href="http://www.baidu.com">声明</a>-->
+            </p>
+        </div>
+    </div>
+</div>

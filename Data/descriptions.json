@@ -1,90 +1,86 @@
 {
-    "help":"test",
-    "categories":["Portfolio"],
-    "contents":[
+  "help": "test",
+  "categories": [
+    "Portfolio"
+  ],
+  "contents": [
+    {
+      "category": "Portfolio",
+      "projects": [
         {
-            "category":"Portfolio",
-            "projects":[
-                {
-                    "titleEng":"TangoAR",
-                    "titleChn":" ",
-                    "shortDescription":"Phone based optical AR headset",
-                    "videoHref":"TODO",
-                    "longDescription":"Tango AR is the second version of Lite AR, which is my bachelor graduation project. The optics is designed to be cheap and easy to source for DIYers. The ID design is comfortable and elegant. With the help of Tango technology, this could be the most affordable yet very powerful AR headset in this world.",
-                    "development":"Unity, 3D printing, optics",
-                    "role":"Designeer of optics, software and ID",
-                    "growth":"Prototyping, fast learning, resources gathering",
-                    "date":"2015 winter till now",
-                    "mainColor":"TODO",
-                    "contrastColor":"TODO"
-                },
-                {
-                    "titleEng":"VRText",
-                    "titleChn":" ",
-                    "shortDescription":"Mobile VR text input solution",
-                    "videoHref":"http://www.56.com/iframe/MTQxNTgxMTU0",
-                    "longDescription":"Text input has always been hard in VR, especially mobile VR. This hinders so many applications including payment, login etc. In this project, I researched in this field, carried out experiments.",
-                    "development":"NyARToolkit, Unity, Laser cutting",
-                    "role":"Main developer",
-                    "growth":"Visual effects realization, development skills",
-                    "date":"2016 Spring and summer",
-                    "mainColor":"#5f81af",
-                    "contrastColor":"#dfe285"
-                },
-                {
-                    "titleEng":"HUDAR",
-                    "titleChn":" ",
-                    "shortDescription":"Social car based on Augmented Reality",
-                    "videoHref":"https://player.vimeo.com/video/162920620?byline=0&portrait=0",
-                    "longDescription":"On the road, due to constraints on communications, drivers tend to misunderstand each other. HUDAR add a digital communication channel between cars, and show user the information gracefully with the help of AR technology. While achieving all of this, HUDAR is very affordable for it only utilizes a phone and a set of simple optics. This project is done together with Chao Wang, a Ph.D student in TU/e. I am in charge of prototyping and video making.",
-                    "development":"NyARToolkit, Unity, Laser cutting",
-                    "role":"Main developer",
-                    "growth":"Visual effects realization, development skills",
-                    "date":"2016 Spring and summer",
-                    "mainColor":"#5f81af",
-                    "contrastColor":"#dfe285"
-                },
-                {
-                    "titleEng":"Balavator",
-                    "titleChn":" ",
-                    "shortDescription":"An icebreaker for strangers",
-                    "videoHref":"https://player.vimeo.com/video/166437859?byline=0&portrait=0",
-                    "longDescription":"Elevator awkwardness is a kind of awkward feeling many people have when being inside an elevator with stranger(s). Balavator tries to resolve this subtle emotional discomfort with games.Balavator is a balancing game. We utilize camera (background extraction and blob detection with Processing) to capture people's movement and simulate a seesaw style balancing box with Unity.User feedback plays a key role in iterations: We used low-fidelity prototype to test feedbacks and developed high-fidelity prototype based on that. Then we asked people who haven't tried the project to use it. To our surprise, many people failed to understand the game and distracted by some game elements. We made changes accordingly, which included increasing perspective, increasing shadows and improving robustness. The usability and user acceptance improved a lot.",
-                    "development":"Processing, Unity, Machine learning",
-                    "role":"Main developer",
-                    "growth":"Fast development，prototyping，fast iteration",
-                    "date":"2016 spring",
-                    "mainColor":"#d6a666",
-                    "contrastColor":"#c1eeff"
-                },
-                {
-                    "titleEng":"IsThatYou",
-                    "titleChn":" ",
-                    "shortDescription":"Old phone based home security network",
-                    "videoHref":"https://www.youtube.com/embed/dU2K3Vfaa9E",
-                    "longDescription":"We got inspirations from discarded phones and designed a home security network utilizing cameras and microphones on phone. To make the interface intuitive and attractive, we designed maps and cartoon characters.",
-                    "development":"Socket.io, JS",
-                    "role":"Project management, interface design(par)",
-                    "growth":"team motivation, fast development",
-                    "date":"2015 winter",
-                    "mainColor":"#6b7de3",
-                    "contrastColor":"#f54f47"
-                },
-                {
-                    "titleEng":"Flow",
-                    "titleChn":" ",
-                    "shortDescription":"Personal emotional data log visualization",
-                    "videoHref":"https://www.youtube.com/embed/x4hUkb1KXLU",
-                    "longDescription":"This is a collaborative project with Data Visualization team from Philips Design. We explored using new, tangible and artistic ways to visualize the abstract emotion.We did two iterations around the \"Emotion landscape\" concept. We went through stages including emotion research, data wash, Grasshopper modeling and laser cutting. This is also the first time I managed a multi disciplinary team.",
-                    "development":"Excel, Grasshopper, Laser cutting",
-                    "role":"Project management，model exportation",
-                    "growth":"Communication among multi disciplinary team",
-                    "date":"2015 winter",
-                    "mainColor":"#ea2a72",
-                    "contrastColor":"#b1f4f7"
-                }
-            ]
+          "titleEng": "TangoAR",
+          "titleChn": " ",
+          "shortDescription": "Phone based optical AR headset",
+          "videoHref": "TODO",
+          "longDescription": "Tango AR is the second version of Lite AR, which is my bachelor graduation project. The optics is designed to be cheap and easy to source for DIYers. The ID design is comfortable and elegant. With the help of Tango technology, this could be the most affordable yet very powerful AR headset in this world.",
+          "development": "Unity, 3D printing, optics",
+          "role": "Designeer of optics, software and ID",
+          "growth": "Prototyping, fast learning, resources gathering",
+          "date": "2015 winter till now",
+          "mainColor": "TODO",
+          "contrastColor": "TODO"
         }
-    ]
-
+      ],
+      "mainProjects": [
+        {
+          "imageSrc": "images/projectImages/2020/DisneyImg.png",
+          "tags": [
+            "Disney",
+            "Project Management"
+          ],
+          "title": "Star Wars: Jedi Challenge",
+          "subtitle": "The world’s first and best-selling consumer AR headset",
+          "pageUrl": "pages/disney.html",
+          "desc":"Project Management <br>2016-2017<br>I was the project manager of Star Wars: Jedi Challenge, which was sold more than 700,000 units world wide. After the initial success, the product line had successors like the dark side expansion pack and Marvel: Power United."
+        },
+        {
+          "imageSrc": "images/projectImages/2020/HoloMuseumImg.png",
+          "tags": [
+            "Ximmerse",
+            "Product Lead"
+          ],
+          "title": "Holo Museum",
+          "subtitle": "An interactive MR experience that brings nature to you",
+          "pageUrl": "pages/holomuseum.html",
+          "desc":"Producer, Developer, Interaction Designer<br>2019<br>Holo Museum is an educational MR experience for younger people. There are four chapters (<a>Ocean Dream, Dinosaur World, Forest Fantasy and Space Exploration</a>) now and growing. It was shown at Siggraph 2020 Immersive Pavilion and sold to more than 100 stores and counting."
+        }
+      ],
+      "smallProjects": [
+        {
+          "imageSrc": "images/projectImages/2020/WatchARImg.png",
+          "tags": [
+            "ISMAR Demo",
+            "Research"
+          ],
+          "title": "Watch AR",
+          "subtitle": "What can a 6 DoF tracked watch add to AR interaction?",
+          "pageUrl": "pages/watchar.html",
+          "desc":"Interaction Researcher, Designer & Prototyper<br>2019<br>Watch AR explored the potential of a 6 DoF tracked smart watch for AR interactions. It was demonstrated on ISMAR'19. ISMAR is the world’s top conference in MR/AR area. The paper can be found <a href=\"../ISMAR'19 Demo_WatchAR.pdf\">here</a>."
+        },
+        {
+          "imageSrc": "images/projectImages/2020/SecretOfMarsImg.png",
+          "tags": [
+            "Huawei",
+            "Prototyping"
+          ],
+          "title": "Secret of Mars AR",
+          "subtitle": "Explore mars inside and out in your living room",          
+          "pageUrl": "pages/mars.html",
+          "desc":"Interaction Design & Research . UI Design . Hi-Fi Prototyping<br>2017<br>Secret of Mars is a mobile AR experience which I worked on during my times in Huawei UCD, 2012 Laboratory. In this educational app, users can explore the galaxy and mars in their room. Users can penetrate the red planet to learn more about its inner structure.  Everything they found during the journey will be stored in the collection page where they can find more detailed knowledge."
+        },
+        {
+          "imageSrc": "images/projectImages/2020/BlasterCrazeImg.png",
+          "tags": [
+            "NetEase",
+            "Interaction Design",
+            "Game Design"
+          ],
+          "title": "Blaster Craze MR",
+          "subtitle": "The world’s first local co-op shooting in MR. Acquired by NetEase",          
+          "pageUrl": "pages/blaster.html",
+          "desc":"Interaction  Designer & Game Designer<br>2019<br>Blaster Craze is the world’s first local multiplayer shooter with MR technology. In a 4*7.5 m sci-fi arena, four players shoot each other to fight for victory. Audience can witness the competition through a mixed reality spectator view.<br>It was initiated by us at the beginning of 2019 and acquired by NetEase in August. NetEase is the second largest game company in China."
+        }
+      ]
+    }
+  ]
 }

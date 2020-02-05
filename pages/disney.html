@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Star Wars: Jedi Challenge</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <script type="text/javascript">
+        //window.location.href = 'Portfolio-ZhixiongLu-iamzerolu@gmail.com.pdf'
+    </script>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/index_high_dpi_responsive.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/detail_page.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Volkhov&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/>
+</head>
+
+<body class="custom_scroll_bar">
+<script id="tpl" type="text/template">
+</script>
+<!-- The start of detail page -->
+<main class="detail_page">
+	<a onclick="history.back()" id="back"> </a>
+	<div id="tp-output"></div>
+	<iframe width="100%" height="500px" src="https://www.youtube.com/embed/QeHh5_L_LCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img class="wide" src="../images/projectImages/2020/disney/DarkSideExpansion.png" alt="">
+    <img class="wide" src="../images/projectImages/2020/disney/Disney logos.png" alt="">
+    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/BTy4K7T0i8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>
+        Prior to join the project, I was working on my own version of phone based AR headset. It was called Lite AR, which was also powered by a smartphone but with different optics. I was intrigued by Ximmerse immediately when they told me that they are working on something similar to Lite AR with a "very large company".
+	</p>
+    <h2>LiteAR</h2>
+    <figure class="left">
+        <img src="../images/projectImages/2020/disney/LiteAROptics.png" alt="">
+        <figcaption>Shot through LiteAR optics</figcaption>
+    </figure>
+    <figure class="right">
+        <img src="../images/projectImages/2020/disney/LiteARDiagram.png" alt="">
+        <figcaption>LiteAR hardware design</figcaption>
+    </figure>
+    
+	<p>       
+		When I started working on the project, the most important objective was to create a PoC to convince the leadership. There were a lot of unknowns, including optics, tracking technology, mechanical design and so on. We needed to get to the Star Wars aesthetic style as possible, which introduced a lot of engineering challenges.
+		Eventually, the PoC worked very well and won support from the Disney board. It got Lenovo's attention during CES. Lenovo got so interested that they eventually bought Mirage brand, handled all the manufacturing and launched the product with Disney.
+	</p>
+	<!-- FootNote -->
+    <div id="FootNote">©2020 &nbsp;Zhixiong Lu</div>
+</main>
+</body>
+<script>
+	// pull 
+	var contentHandler = {
+	    update : function () {
+	        console.log(pageData.contents[0]);
+	        var template = $('#tpl').html();
+	        //IMPORTANT THIS LINE INCLUDES THE DATA FOR THE TEMPLATE, UNIQUE IN ALL THE PAGES
+	        // ********************************** //
+	        var html = Mustache.to_html(template, pageData.contents[0].mainProjects[0]);
+	        // ********************************** //
+	        $('#tp-output').html(html);
+	        bodyStyler.styleFix();
+	    }
+	};
+	var bodyStyler = {
+		styleFix: function(){
+			var body = $('body')
+			var bodyHeight = body.height()
+		    console.log(bodyHeight)
+		    body.css('top',-bodyHeight*0.1*0.8)
+		    .css('height',bodyHeight*0.8)
+		    .css('transform','scale(0.8)')
+		}
+	};
+	var pageData = {
+	};
+	//Main function
+	$(function(){
+	    $.get('../MyTemplates/detailTpl.html', function(data){
+	        $("#tpl").html(data);
+	        $.getJSON('../Data/descriptions.json', function(jsonData, status){
+	            console.log(status);
+	            console.log(jsonData)
+	            pageData.contents = jsonData.contents;
+	            contentHandler.update();
+	        });
+	    });
+	});
+
+</script>
+</html>
