@@ -8,6 +8,7 @@ var contentHandler = {
         var html = Mustache.to_html(template, pageData.contents[0]);
         $('#tp-output').html(html);
         bodyStyler.styleFix();
+        toggleList();
     }
 };
 var bodyStyler = {
@@ -22,6 +23,26 @@ var bodyStyler = {
     };
 var pageData = {
 };
+var patentListOpen = true;
+function toggleList(argument) {
+    var patentList = $("ul#patentList")
+    var btn = $("a#patentMoreButton")
+    if(!patentListOpen){
+        // body...
+        patentList.css('height', 'auto');
+        btn.html("- Less");
+        patentListOpen = true;
+    }
+    else{
+        patentList.css('height', '82px');        
+        btn.html("+ More");
+        patentListOpen = false
+    }
+
+    console.log(patentListOpen)
+    console.log(btn.html() )
+    
+}
 //Main function
 $(function(){
     console.log(this);

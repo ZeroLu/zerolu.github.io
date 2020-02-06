@@ -365,6 +365,10 @@ ul, li {
     top: 2257px;
     cursor: pointer;
 }
+#patentList {
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
     
 
     
