@@ -55,7 +55,7 @@
           "title": "Watch AR",
           "subtitle": "What can a 6 DoF tracked watch add to AR interaction?",
           "pageUrl": "pages/watchar.html",
-          "desc":"Interaction Researcher, Designer & Prototyper<br>2019<br>Watch AR explored the potential of a 6 DoF tracked smart watch for AR interactions. It was demonstrated on ISMAR'19. ISMAR is the world’s top conference in MR/AR area. The paper can be found <a href=\"../ISMAR'19 Demo_WatchAR.pdf\">here</a>."
+          "desc":"Interaction Researcher, Designer & Prototyper<br>2019<br>Watch AR is the result of my research in my spare time, it explored the potential of a 6 DoF tracked smart watch for AR interactions. It was demonstrated on ISMAR'19. ISMAR is the world’s top conference in MR/AR area. The paper can be found <a href=\"../ISMAR'19 Demo_WatchAR.pdf\">here</a>."
         },
         {
           "imageSrc": "images/projectImages/2020/SecretOfMarsImg.png",
