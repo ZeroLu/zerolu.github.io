@@ -1,0 +1,63 @@
+:root {
+  /* Links */
+    --cover-link-border-bottom                         : ;
+    --cover-link-border-bottom--hover                  : ;
+    --cover-link-color                                 : blue !important;
+    --cover-link-color--hover                          : ;
+    --cover-link-text-decoration                       : underline;
+    --cover-link-text-decoration--hover                : ;
+    --cover-link-text-decoration-color                 : ;
+    --cover-link-text-decoration-color--hover          : ;
+}
+
+.DoDont_table {
+	border: none;
+}
+.DoDont_table .divider {
+	width: 2%;
+}
+.DoDont_table th {
+	width: 49%;
+	padding: 0 0 10px 0 !important;
+	vertical-align: bottom;
+}
+.DoDont_table td, .DoDont_table tr {
+	border: none;
+	background: transparent !important;
+}
+.DoDont_table td {
+	width: 49%;
+	vertical-align: top;
+}
+td {
+	vertical-align: top !important;
+}
+.DoDont_tr {
+
+}
+.Do_td, .Dont_td, .Rec_td, .Cau_td  {
+	padding: 0 !important;
+	font-size: 10px;
+	font-weight: bold;
+}
+.Do_td {
+	color: #008c4a;
+	border-top: 10px solid #008c4a !important;
+}
+.Dont_td {
+	color: #ff8c8c;
+	border-top: 10px solid #d65454 !important;
+}
+.Rec_td {
+	color: #56b0ff;
+	border-top: 10px solid #56b0ff !important;
+}
+.Cau_td {
+	color: orange;
+	border-top: 10px solid orange !important;
+}
+
+.DoDont_table .content td {
+	font-size: 12px;
+	padding: 0 10px 0 0 !important;
+}

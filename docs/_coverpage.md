@@ -1,13 +1,13 @@
-![logo](_media/icon.svg)
+<!-- ![logo](_media/icon.svg) -->
 
-# MR Design Guidelines
+# Mixed Reality Design Guidelines
 
-> writen for Rhino X and other MR headsets
+> Writen for [Rhino X](http://www.ximmerse.com/index/rhinox/index.html) and other MR headsets
 
 
 
-[Contribute on Github](https://github.com/zerolu.github.io/docs/)
-[Start Reading](/illusion)
+<!-- [Contribute on Github](https://github.com/zerolu.github.io/docs/) -->
+[Scroll ⬇️ to read](/?id=hello)
 <!-- 背景图片 -->
 
 <!-- ![](_media/bg.png) -->
