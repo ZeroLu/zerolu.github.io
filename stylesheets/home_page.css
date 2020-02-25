@@ -348,6 +348,10 @@ ul, li {
     text-decoration: underline;
     color: rgb(0, 209, 255);
 }
+a.blue {
+    text-decoration: underline;
+    color: rgb(0, 209, 255);
+}
 
 
 /* More */
