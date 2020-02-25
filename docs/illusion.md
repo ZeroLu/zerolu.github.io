@@ -192,3 +192,34 @@ Exact alignment btween virtual and real wouldn't work very well since the tracki
     <td>Make the position and shape of a virtual object unrelated to the real object.</t>
   </tr>
 </table>
+
+## Objects should enter the scene with a belivable setting
+
+In real world, objects don't just appear into the world all of a sudden. Introduce your characters into the scene through a portal, a hologram projector or other creative ways. A good first impression would be carried along through the entire experience.
+
+
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%; margin-top: 80px;}
+  #mc_embed_signup form {
+    text-align: left;
+  }
+  #mc_embed_signup .button  {
+    background: #3f51b5;
+    color: white;
+  }
+</style>
+<div id="mc_embed_signup">
+<form action="https://github.us4.list-manage.com/subscribe/post?u=98e146615feaa80a87c9e26a2&amp;id=29c6a9379d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+  <label for="mce-EMAIL">This page is under constant improvement. 👋 Subscribe to future updates! </label>
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_98e146615feaa80a87c9e26a2_29c6a9379d" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="OK⏎" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
