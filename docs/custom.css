@@ -8,6 +8,7 @@
     --cover-link-text-decoration--hover                : ;
     --cover-link-text-decoration-color                 : ;
     --cover-link-text-decoration-color--hover          : ;
+    --link-color : #3f50b5 ;
 }
 
 .DoDont_table {
@@ -18,7 +19,7 @@
 }
 .DoDont_table th {
 	width: 49%;
-	padding: 0 0 10px 0 !important;
+	padding: 0 !important;
 	vertical-align: bottom;
 }
 .DoDont_table td, .DoDont_table tr {

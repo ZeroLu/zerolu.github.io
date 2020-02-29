@@ -7,7 +7,7 @@
 
 
 <!-- [Contribute on Github](https://github.com/zerolu.github.io/docs/) -->
-[Scroll ⬇️ to read](/?id=hello)
+[Scroll ⬇️ to read](/?id=introduction)
 <!-- 背景图片 -->
 
 <!-- ![](_media/bg.png) -->
