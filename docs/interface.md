@@ -131,7 +131,30 @@ Transparent UI won't render properly when [linear color space is checked in Unit
 
 ![Problem Demonstration](LinearColorSpaceUIProbleminUnity.jpg) -->
 
-## Future of 3D UI
+## Beyond WIMP(Window-Icon-Menu_Pointer) 
+The UI mentioned in this page are still using the WIMP metaphor with raycast(Head gaze or hand ray). WIMP will still be important in MR because there still will be a lot of `abstract concept models` in MR applications. But just like touch gestures add a new dimension to the mobile platform, there are huge opportunities for novel interaction techniques. Some would increase usability while some would make the UI more delightful to use.
+
+### Spatial gestures
+One of the most exciting areas of 3D UI is spatial gestures. Drag-and-drop, kinematic scrolling and pinch-to-zoom are great gestures which are usable and delightful at the same time. Right now, two-hand-pinch-to-scale and toss-to-delete are examples of spatial gestures that are becoming standards.
+
+### Spatial widgets
+Some VR games use no GUI(Graphical User Interface) at all. Instead, they designed novel spatial widgets for some tasks. Although not all the ideas are more efficient or easier to understand, some of them will be adapted as standards(Putting catridge into the slot to start a game is becoming a standard in VR games).
+
+### Tools from real world
+For applications with a strong real world counterpart, like white board app,  designers can eliminate of most UI by replicating the real pen, real eraser and real whiteboard.
+
+### Z-depth
+Z-depth can be a great opportunity for increasing the display volume. And our brain is good at memorizing spatial relationships. One of the good example is selecting pictures from a stack.
+![Daydream Lab: selecting photos]()
+
+### 3D
+Simply making every UI elements 3D usally won't help with the readbility. But this can be a different art style.  For games, it's another story because 3D UI can contribute the immersion of the narritive like [Metro](). Currently, creating 3D UI elements takes much longer time than 2D ones since the toolchain is not ready.
+
+
+### Materiality
+UI design utilizes color, highlight, shadow to build hierachy in UI. In MR, UI is inside a 3D engine, so there are opportunities to use the rendering power of the 3D engine to create novel looking UIs.
+
+
 
 
 

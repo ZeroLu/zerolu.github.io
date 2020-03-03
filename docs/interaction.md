@@ -11,7 +11,7 @@ Most of the time, we want to choose objects with fewer perceived affordances to 
 
 [[picture]vague, unclear affordance : a ball | single affordance : a gu, a catrige]
 
-Signifiers are traces of an object that indicate the intended use to the user. For instance, different sizes of button would signify different affordances. 
+Signifiers are traces of an object that indicate the intended use to the user. When designing a novel 3D widget, we need to design the signifiers to guide the right direction. A lot of signifiers can be found in everyday objects or the intrinsic characteristics of objects. For instance, different sizes of button would signify different affordances. 
 
 [pinch button, push button,  different actions from users]
 
