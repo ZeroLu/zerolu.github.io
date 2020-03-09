@@ -44,6 +44,16 @@ h2 {
     color: #FFFFFF;
     margin: 50px 0;
 }
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 35px;
+    /* or 146% */
+    color: rgba(255, 255, 255, 1);
+    margin: 20px 0;
+}
 .ProjectDesc {
     font-family: Roboto;
     font-style: normal;
@@ -97,7 +107,30 @@ figcaption {
 
     color: rgba(255, 255, 255, 0.5);
 }
-
+.outcome {
+    width: 100%;
+    display: flex;
+}
+.outcome h4 {
+     font-family: Volkhov;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 35px;
+    color: rgb(0, 209, 255);
+    margin: 50px 0;
+    text-align: center;
+}
+.outcome p {
+    text-align: center;
+    font-size: 20px;
+}
+.outcome i {
+    font-size: 16px;
+}
+.outcome .section {
+    width: 33%;
+}
 
 
 

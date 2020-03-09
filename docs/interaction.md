@@ -7,11 +7,14 @@ Different input modalities create different constraints and opportunities for in
 
 ### Perceived affordance and signifier
 [Perceived affordance and signifier](https://ux.stackexchange.com/a/94270) are terms brought to design by Donald Norman. MR is a simulated virtual world and people would bring their knowledge of real world with them. They would expect the virtual object to behave like the real one.
-Most of the time, we want to choose objects with fewer perceived affordances to guide the user towards the action we intended. Lots of VR games use console catrige to load a game level, not only because it symbolizes loading a game, but also catrige only "affords" being put into a tray for most peoeple.
+
+Most of the time, we want to choose objects with fewer **perceived affordances**. It not only helps to guide the user towards the action we intended, but also decrease the number of features we have to develop to fulfill user's expectations. 
+
+Lots of VR games use console catrige to load a game level, not only because it symbolizes loading a game, but also catrige only "affords" being put into a tray for most peoeple.
 
 [[picture]vague, unclear affordance : a ball | single affordance : a gu, a catrige]
 
-Signifiers are traces of an object that indicate the intended use to the user. When designing a novel 3D widget, we need to design the signifiers to guide the right direction. A lot of signifiers can be found in everyday objects or the intrinsic characteristics of objects. For instance, different sizes of button would signify different affordances. 
+**Signifiers** are traces of an object that communicate the intended use to the user. When designing a novel 3D widget, we need to design the signifiers to guide the right direction. A lot of signifiers can be found in everyday objects or the intrinsic characteristics of objects. For instance, different sizes of button would signify different affordances. 
 
 [pinch button, push button,  different actions from users]
 

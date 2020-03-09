@@ -17,6 +17,7 @@
 <title>Holo Museum</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
     <script type="text/javascript">
         //window.location.href = 'Portfolio-ZhixiongLu-iamzerolu@gmail.com.pdf'
     </script>
@@ -31,35 +32,23 @@
 <body class="custom_scroll_bar">
 <script id="tpl" type="text/template">
 </script>
+<script type="text/javascript">
+    $(function(){
+        var converter = new showdown.Converter()
+        $.get('../Data/holomuseum.md', function(data){
+            var htmlData = converter.makeHtml(data)
+            $("#md-output").html(htmlData)
+        });
+       
+    })
+</script>
 <!-- The start of detail page -->
 <main class="detail_page">
     <a onclick="history.back()" id="back"> </a>
     <div id="tp-output"></div>
-    <h2>Black Horse</h2>
-    <p>
-        Holo Museum series started with Ocean Dream. Ocean Dream was the result of a week long hackthon style development. I was in charge of writing, working on the timeline in Unity, finding the right music, and even doing voice over. 
-    </p>
-    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/PJ6UlATS4Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>
-        But it stole the show during GMIC. We had so many people waiting in line to try that we needed to borrow staff from other booths.
-    </p>
-    <img class="wide" src="../images/projectImages/2020/holomuseum/GMIC.png" alt="">
-    <br>
-    <br>
-    <h2>Go Further</h2>
-    <p>
-        After GMIC, Ocean Dream quickly expanded into the entire Holo Museum series and is the major product of Ximmerse now.
-    </p>
+    <div id="md-output">
+    </div>
     
-    <figure>
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/LgErT0ARp8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <figcaption>Shot through Rhino-X optics, Dino World.</figcaption>
-    </figure>
-    <br>
-    <figure>
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/ivZA6fJ3agU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <figcaption>Shot through Rhino-X optics, Forest Fantasy.</figcaption>
-    </figure>
     <!-- FootNote -->
     <div id="FootNote">©2020 &nbsp;Zhixiong Lu</div>
 </main>
