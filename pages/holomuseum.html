@@ -18,10 +18,13 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script type="text/javascript" src="../javascripts/pgwslideshow.js"></script>
+
     <script type="text/javascript">
         //window.location.href = 'Portfolio-ZhixiongLu-iamzerolu@gmail.com.pdf'
     </script>
     <link rel="stylesheet" type="text/css" href="../stylesheets/index_high_dpi_responsive.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pgwslideshow@2.0.0/pgwslideshow.min.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../stylesheets/detail_page.css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Volkhov&display=swap" rel="stylesheet">
 
@@ -38,6 +41,12 @@
         $.get('../Data/holomuseum.md', function(data){
             var htmlData = converter.makeHtml(data)
             $("#md-output").html(htmlData)
+            // init the slideshow
+            $('.pgwSlideshow').pgwSlideshow({
+                autoSlide: true,
+                displayList: false,
+                intervalDuration: 5000
+            });
         });
        
     })
@@ -61,7 +70,7 @@
             var template = $('#tpl').html();
             //IMPORTANT THIS LINE INCLUDES THE DATA FOR THE TEMPLATE, UNIQUE IN ALL THE PAGES
             // ********************************** //
-            var html = Mustache.to_html(template, pageData.contents[0].mainProjects[1]);
+            var html = Mustache.to_html(template, pageData.contents[0].mainProjects[0]);
             // ********************************** //
             $('#tp-output').html(html);
             bodyStyler.styleFix();

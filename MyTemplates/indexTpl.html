@@ -36,7 +36,7 @@
         <!-- MainProjectCard -->
         <a class="MainProjectCard" href="{{pageUrl}}">
             <!-- MainImage -->
-            <img src="{{imageSrc}}" class="MainImage" style="background: rgb(50,50,50); border-radius: 10px;"></img>
+            <img src="{{imageSrc}}" class="MainImage" style="border-radius: 10px;"></img>
             {{#tags}}
             <!-- Tag -->
             <div class="Tag">{{.}}</div>
@@ -52,9 +52,9 @@
     
     {{#smallProjects}}
     <!-- SmallProjectCard -->
-    <a class="SmallProjectCard" href="{{pageUrl}}">
+    <a class="SmallProjectCard" href="{{pageUrl}}" target="{{target}}">
         <!-- MainImage -->
-        <img src="{{imageSrc}}" width="400px" height="263px" class="MainImage" style="background: rgb(50,50,50); border-radius: 8px;"></img>
+        <img src="{{imageSrc}}" width="400px" height="263px" class="MainImage" style="border-radius: 8px;"></img>
         <div class="wrapper">
             {{#tags}}
             <!-- Tag -->

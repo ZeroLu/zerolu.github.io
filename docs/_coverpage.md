@@ -1,17 +1,20 @@
 <!-- ![logo](_media/icon.svg) -->
-
-# MR Design Guidelines
+<div class="cover_custom" style="">
+	<div class="left" style="">
+		<img src="./images/MRDesignGuidelinesTitle.svg" style="">
+		<br>
+		<a  href="#/?id=introduction" style="">Scroll down to read</a>
+	</div>
+	<div class="right" style="">
+		<img width="80%" src="./images/title_img.png">
+	</div>
+</div>
+<!-- # MR Design Guidelines
 
 > MR stands for Mixed Reality or Made for [Rhino X](http://www.ximmerse.com/index/rhinox/index.html)
-
-
-
-<!-- [Contribute on Github](https://github.com/zerolu.github.io/docs/) -->
 [Scroll down to read](/?id=introduction)
-<!-- 背景图片 -->
+![color](#000000) -->
 
-<!-- ![](_media/bg.png) -->
 
-<!-- 背景色 -->
 
-![color](#000000)
+

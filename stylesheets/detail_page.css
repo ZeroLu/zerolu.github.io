@@ -1,19 +1,20 @@
 /*-------------------*/
 #back {
-    background-image: url("https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/4b88/2f94/c5031a08df6acb6c90147add062d71ca");
+    background-image: url("../images/svg/index/ic_back.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 70px;
-    top: 65px;
+    width: 52px;
+    height: 48px;
+    left: -30px;
+    top: 75px;
     display: block;
     cursor: pointer;
 }
 .ProjectTitleBlock{
     padding-top: 120px;
-    height: 650px;
+    /*height: 650px;*/
+    margin-bottom: 200px;
 }
 .ProjectTitle{
     font-family: Volkhov;
@@ -73,12 +74,21 @@ p {
     color: rgba(255, 255, 255, 0.8);
     margin: 50px 0;
 }
+blockquote p{
+    font-size: 18px ;
+    line-height: 30px;
+    background-color: #3e3e3e59;
+    padding: 20px;
+    /* width: 110%; */
+    border-radius: 10px;
+    color: #b5b5b5;
+}
 figure {
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    font-style: lighter;
+    font-weight: lighter;
     font-size: 24px;
-    line-height: 35px;
+    line-height: 40px;
     /* or 146% */
 
     color: rgba(255, 255, 255, 0.8);
