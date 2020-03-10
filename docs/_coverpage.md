@@ -6,7 +6,7 @@
 		<a  href="#/?id=introduction" style="">Scroll down to read</a>
 	</div>
 	<div class="right" style="">
-		<img width="80%" src="./images/title_img.png">
+		<img width="80%" src="./images/pic_rhinox_promo.svg">
 	</div>
 </div>
 <!-- # MR Design Guidelines
