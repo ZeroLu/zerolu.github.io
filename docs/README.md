@@ -6,21 +6,20 @@ MR (Mixed Reality) techonology is going to change the way we compute. It is very
 
 With years of R&D and lots of trial and errors, we have condensed our learnings down into these design guidelines. We are also creating tools like *Mixed Reality Playground* and *MRITK(MR Interaction Toolkit)*, so that you can see these guidelines in action and actually use our code to build them. So stay tuned for updates.
 
-
-<!-- ## Intro to MR Technology
-There are a lot of buzzwords around technology. VR, AR, XR, Spatial Computing etc. 
-Below is a short video explaining these buzzwords:
-
-<iframe width="100%" height="300" src="https://www.youtube.com/embed/TjsIyDn5H44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Our definition of MR is an optical-see-through stereo HMD(Head Mounted Display) with 6 DoF(Degree of Freedom) headtracking at least. Magic Leap One, HoloLens and Rhino X all fall into this category. -->
-
 ## What's special about Rhino X
 Most MR headsets have fairly limited fov(field of view), the 50°(horizontal) x 57°(vertical) fov of Rhino X can give you an immersive MR experience. Ximmerse also created X-tag tracking technology which can provide robust tracking for any objects, providing richer interaction opportunities.
 
 ## Why these design guidelines
 All major MR companies have their design guidelines, and this document is not a sum up of other company's work. All the findings here are based on our own research. We want to give back the design community with our own unique insights.
 Guidelines on [illusion](/illusion), [color](/interface?id=our-study-for-rhino-x), [eye space UI](/interface?id=eye-space-ui-standard) and [far field interaction techniques](/interaction?id=far-field-grabbing-techniques-zoom-grab-and-portal-grab) are all novel contributions to the commnunity.
+
+## What is MR? Why it's different from VR or AR?
+There are a lot of buzzwords around technology, like VR, AR, XR, Spatial Computing etc. 
+Below is a short video explaining these buzzwords:
+
+<iframe width="100%" height="300" src="https://www.youtube.com/embed/TjsIyDn5H44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Our definition of MR is an optical-see-through stereo HMD(Head Mounted Display) with 6 DoF(Degree of Freedom) headtracking at least. Magic Leap One, HoloLens and Rhino X all fall into this category.
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">

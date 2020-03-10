@@ -23,17 +23,6 @@
       ],
       "mainProjects": [
         {
-          "imageSrc": "images/projectImages/2020/DisneyImg.png",
-          "tags": [
-            "Disney",
-            "Project Management"
-          ],
-          "title": "Star Wars: Jedi Challenge",
-          "subtitle": "The world’s first and best-selling consumer AR headset",
-          "pageUrl": "pages/disney.html",
-          "desc":"Project Management <br>2016-2017<br>I was the project manager of Star Wars: Jedi Challenge, which was sold more than 700,000 units world wide. After the initial success, the product line had successors like the dark side expansion pack and Marvel: Power United."
-        },
-        {
           "imageSrc": "images/projectImages/2020/HoloMuseumImg.png",
           "tags": [
             "Ximmerse",
@@ -43,6 +32,17 @@
           "subtitle": "An interactive MR experience that brings nature to you",
           "pageUrl": "pages/holomuseum.html",
           "desc":"Producer, Developer, Interaction Designer<br>2019<br>Holo Museum is an educational MR experience for younger people. There are four chapters (<a>Ocean Dream, Dinosaur World, Forest Fantasy and Space Exploration</a>) now and growing."
+        },
+        {
+          "imageSrc": "images/projectImages/2020/DisneyImg.png",
+          "tags": [
+            "Disney",
+            "Project Management"
+          ],
+          "title": "Star Wars: Jedi Challenge",
+          "subtitle": "The world’s first and best-selling consumer AR headset",
+          "pageUrl": "pages/disney.html",
+          "desc":"Project Management <br>2016-2017<br>I was the project manager of Star Wars: Jedi Challenge, which was sold more than 700,000 units world wide. After the initial success, the product line had successors like the dark side expansion pack and Marvel: Power United."
         }
       ],
       "smallProjects": [
@@ -58,15 +58,14 @@
           "desc":"Interaction Researcher, Designer & Prototyper<br>2019<br>Watch AR is the result of my research in my spare time, it explored the potential of a 6 DoF tracked smart watch for AR interactions. It was demonstrated on ISMAR'19. ISMAR is the world’s top conference in MR/AR area. The paper can be found <a href=\"../ISMAR'19 Demo_WatchAR.pdf\">here</a>."
         },
         {
-          "imageSrc": "images/projectImages/2020/SecretOfMarsImg.png",
+          "imageSrc": "images/projectImages/2020/DesignGuidelineImg.png",
           "tags": [
-            "Huawei",
-            "Prototyping"
+            "Design Guidelines"
           ],
-          "title": "Secret of Mars AR",
-          "subtitle": "Explore mars inside and out in your living room",          
-          "pageUrl": "pages/mars.html",
-          "desc":"Interaction Design & Research . UI Design . Hi-Fi Prototyping<br>2017<br>Secret of Mars is a mobile AR experience which I worked on during my times in Huawei UCD, 2012 Laboratory. In this educational app, users can explore the galaxy and mars in their room. Users can penetrate the red planet to learn more about its inner structure.  Everything they found during the journey will be stored in the collection page where they can find more detailed knowledge."
+          "title": "MR Design Guidelines",
+          "subtitle": "A reflection on the learnings of the emerging medium",
+          "pageUrl": "docs/",
+          "desc":"Owner<br>2020<br>MR design guidelines is aimed to hand off our learnings of MR to our developers."
         },
         {
           "imageSrc": "images/projectImages/2020/BlasterCrazeImg.png",
@@ -79,6 +78,19 @@
           "subtitle": "The world’s first local co-op shooting in MR. Acquired by NetEase",          
           "pageUrl": "pages/blaster.html",
           "desc":"Interaction  Designer & Game Designer<br>2019<br>Blaster Craze is the world’s first local multiplayer shooter with MR technology. In a 4*7.5 m sci-fi arena, four players shoot each other to fight for victory. Audience can witness the competition through a mixed reality spectator view.<br>It was initiated by us at the beginning of 2019 and acquired by NetEase in August. NetEase is the second largest game company in China."
+        }
+      ],
+      "legacy" : [
+        {
+          "imageSrc": "images/projectImages/2020/SecretOfMarsImg.png",
+          "tags": [
+            "Huawei",
+            "Prototyping"
+          ],
+          "title": "Secret of Mars AR",
+          "subtitle": "Explore mars inside and out in your living room",          
+          "pageUrl": "pages/mars.html",
+          "desc":"Interaction Design & Research . UI Design . Hi-Fi Prototyping<br>2017<br>Secret of Mars is a mobile AR experience which I worked on during my times in Huawei UCD, 2012 Laboratory. In this educational app, users can explore the galaxy and mars in their room. Users can penetrate the red planet to learn more about its inner structure.  Everything they found during the journey will be stored in the collection page where they can find more detailed knowledge."
         }
       ]
     }
