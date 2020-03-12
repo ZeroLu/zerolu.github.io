@@ -38,7 +38,7 @@
 <script type="text/javascript">
     $(function(){
         var converter = new showdown.Converter()
-        $.get('../Data/holomuseum.md', function(data){
+        $.get('../Data/holomuseum2.md', function(data){
             var htmlData = converter.makeHtml(data)
             $("#md-output").html(htmlData)
             // init the slideshow
