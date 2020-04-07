@@ -97,7 +97,7 @@ If you are developing for Rhino X, do check out our [MR UI template](https://www
 
 ![Head canvas prefab](images/ScreenshotHeadCanvas.png)
 
-?> _TIP_ When placing images, simply click `Set Native Size` button to set the correct width and height!
+?> _TIP_ When placing sprites, simply click `Set Native Size` button to set the correct width and height!
 
 5. For simple UI element without the need of a canvas, like an annotation in the world space, drag `WorldSprite.prefab`, `WorldTextMesh.prefab` or `WorldTextMeshPro.prefab` into hierachy.
 

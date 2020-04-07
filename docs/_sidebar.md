@@ -4,3 +4,5 @@
 * [User Interface](/interface)
 * [Downloads](/download)
 * [Acknowledgement](/acknowledgement)
+* [:uk: En](/)
+* [🇨🇳 中文](/zh-cn/)

@@ -63,42 +63,44 @@ UI的人机工程学是基础性的原则。它是一个可用的UI的底线。
 | 用法 | 简短的，不会打断当前操作的通知类信息（类似于移动端的toast）  | 会打断当前操作的信息，如游戏结束的提示语  |
 
 ##### 舒适区域
-以下的舒适区域是通过用户测试得出的，针对Rhino X：
+以下的舒适区域划分是通过用户测试得出的，针对Rhino X：
 
 ![Eye space UI comfort zones](../images/Eye%20Space%20UI%20Comfort%20Zones-2.png)
 
-### Rhino X standards cheat sheet
+### Rhino X 标准总览
 
 ![MR UI Standards Cheat Sheat](../images/MRUIStandardsCheatSheat.png)
 
-If you are developing for Rhino X, do check out our [MR UI template](https://www.figma.com/file/i9Az94FXnHDCRw09Wlz5lM/daydream_stickersheet_components_20170517?node-id=76%3A380) and [MRUIHelper.unitypackage](https://drive.google.com/file/d/1CxGVXWRHYkHK2gpme-HViuTdVp9NZJ5N/view?usp=sharing) to kickstart your design. The Unitypackage also includes essential scripts like `billboarding`, `auto resize`, `UI docker` etc.
+如果你为Rhino X开发，请查看我们的[MR UI Figma 模板](https://www.figma.com/file/i9Az94FXnHDCRw09Wlz5lM/daydream_stickersheet_components_20170517?node-id=76%3A380) 和 [MRUIHelper.unitypackage](https://drive.google.com/file/d/1CxGVXWRHYkHK2gpme-HViuTdVp9NZJ5N/view?usp=sharing) 来开始你的设计. Unitypackage内也包含必要的脚本，例如`billboarding`, `auto resize`, `UI docker`等。
+
+下面就是MRUI Figma 模板的预览（可能需要科学上网）：
 
 <iframe style="border: none;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fi9Az94FXnHDCRw09Wlz5lM%2Fdaydream_stickersheet_components_20170517%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
-### How to implement
-1. Design your UI with our UI template in Sketch or other vector software
+### 如何与工程对接
+1. 使用我们的模板在Sketch、Figma或其他矢量设计软件内设计
 
-	Be mindful of the standards when designing, especially when it comes to line width and color choice.
+	在设计时留意我们提供的颜色和线宽等标准。
 
-2. Export your files into the image files
+2. 将图片导出（导出是选择1x还是2x，在模板里面已经有说明）
 
-!> **NOTE** Be sure to export images with one pixel of transparent edge. If not, Unity would render the edge like the edge of a mesh, which is much more aliased.
+!> **NOTE** 注意导出时需要留出一个像素的边框，否则，游戏引擎往往会将边框渲染成mesh的边界，锯齿感更强。
 
-3. Import the `MRUIHelper.unitypackage`.
+3. 将`MRUIHelper.unitypackage`导入到Unity工程里
 
-4. For head space main UI like a menu, drag `HeadCanvas.prefab` into hierachy. The zones guide has already been included.
+4. 如果是类似于主菜单这样的头部空间UI，将`HeadCanvas.prefab` 拖进场景中。这个prefab里包含了不同舒适区域，方便你摆放UI。
 
 ![Head canvas prefab](../images/ScreenshotHeadCanvas.png)
 
-?> _TIP_ When placing images, simply click `Set Native Size` button to set the correct width and height!
+?> _TIP_ 当插入sprite时，只需要点击`Set Native Size` 按钮就可以设置为sprite设置正确的宽高，无需手动调节且能一比一还原设计稿。
 
-5. For simple UI element without the need of a canvas, like an annotation in the world space, drag `WorldSprite.prefab`, `WorldTextMesh.prefab` or `WorldTextMeshPro.prefab` into hierachy.
+5. 对于简单的、不需要canvas的UI，比如一个世界空间的标注，将 `WorldSprite.prefab`、`WorldTextMesh.prefab`或`WorldTextMeshPro.prefab` 拖入场景即可。
 
 ![Screenshot Text Mesh](../images/ScreenshotTextMesh.png)
 
-?> _TIP_ When using `WorldTextMesh.prefab` Please use character size for changing font size, and keep character size at 100.
+?> _TIP_ 当使用`WorldTextMesh.prefab`是，请通过改变character size的方式来更改font size，并保持character size在100。这么做是为了简化换算并确保文字清晰可读。
 
-6. For eye space UI canvas, drag `EyeCanvas.prefab` into hierachy.
+6. 对于眼部空间UI canvas，将`EyeCanvas.prefab` 拖入场景即可。
 
 <!-- ## Responsive MR UI
 ### Billboarding and tag along
@@ -124,31 +126,29 @@ Transparent UI won't render properly when [linear color space is checked in Unit
 
 ![Problem Demonstration](LinearColorSpaceUIProbleminUnity.jpg) -->
 
-## Beyond WIMP(Window-Icon-Menu_Pointer) 
-The UI mentioned in this page are still using the WIMP metaphor with raycast(Head gaze or hand ray). WIMP will still be important in MR because there still will be a lot of `abstract concept models` in MR applications. But just like touch gestures add a new dimension to the mobile platform, there are huge opportunities for novel interaction techniques. Some would increase usability while some would make the UI more delightful to use.
+## 面向未来：超越WIMP(Window-Icon-Menu_Pointer) 
+本页介绍的UI还是运用传统意义上的WIMP隐约，只不过交互方式变为了偷瞄或ray-cast。WIMP在MR中依然会很重要，因为MR应用里依然存在很多`抽象概念模型`，这些是最适合用WIMP来设计UI。但正如触摸手势为移动平台添加了新的一个维度，MR平台也有着巨大的UI方面的创新机会。以下介绍的创新机会有的能提高可用性，而有的能让UI用起来更加愉悦。
 
-### Spatial gestures
-One of the most exciting areas of 3D UI is spatial gestures. Drag-and-drop, kinematic scrolling and pinch-to-zoom are great gestures which are usable and delightful at the same time. Right now, two-hand-pinch-to-scale and toss-to-delete are examples of spatial gestures that are becoming standards.
+### 空间手势
+三维UI最让人兴奋的领域之一就是空间手势。拖拽、滑动、双指缩放等都是目前通用的手势交互，而它们兼顾了有用和愉悦。在XR领域，双手缩放和抛开删除就是两个正在成为标准的手势。
 
-### Spatial widgets
-Some VR games use no GUI(Graphical User Interface) at all. Instead, they designed novel spatial widgets for some tasks. Although not all the ideas are more efficient or easier to understand, some of them will be adapted as standards(Putting catridge into the slot to start a game is becoming a standard in VR games).
+### 空间控件
+一些VR游戏几乎没有使用任何的GUI（图像用户界面）。它们设计了创新的空间控件来完成相应任务。将代表游戏关卡的卡带放入卡槽这一交互就已经被多个VR游戏采用，几乎成为了新的标准。不过这些新的创新控件不一定效率更高或更加容易理解，设计师设计时需要反复测试。
 
-### Tools from real world
-For applications with a strong real world counterpart, like white board app,  designers can eliminate of most UI by replicating the real pen, real eraser and real whiteboard.
+### 复制现实世界的工具
+对于那些在现实世界中有对标的应用，如白板应用，设计师几乎可以消除所有的GUI，而直接复制现实生活中的体验即可（如真实的笔、橡皮擦和白板）。
 
-### Z-depth
-Z-depth can be a great opportunity for increasing the display volume. And our brain is good at memorizing spatial relationships. One good example is [selecting pictures from a stack](https://youtu.be/lGUmTQgbiAY?t=488).
+### Z轴
+在传统的2D平面上是不存在Z轴，即深度这个轴的。Z轴可以提高显示容量。而我们的大脑在记忆空间关系方面特别擅长，比记忆抽象概念擅长得多（这也是为什么有的记忆方法会通过虚拟一个宫殿来增强记忆）。谷歌Daydream实验室的一个[从一叠图片中选取照片的例子](https://youtu.be/lGUmTQgbiAY?t=488)就展现了Z轴提高显示容量的潜力：
 <video width="100%" autoplay loop muted  src="videos/Daydream_Labs_Selecting%20photos.mp4"></video>
 
-### 3D
-Simply making every UI elements 3D usally won't help with the readbility. But this can be a different art style.  For games, it's another story because 3D UI can contribute the immersion of the narritive like [Metro series](https://medium.com/@thewanderlust/considering-the-narrative-in-user-interface-design-for-video-games-c45953c22760). 
-![Diegetic UI in Metro: Last Light](../images/Diegetic%20UI_Metro%20Last%20Light.jpeg)
-Currently, creating 3D UI elements takes much longer time than 2D ones since the toolchain is not ready.
+### 三维化
+简单讲每一个UI元素变成三维的对增强可读性和可识别性没有任何帮助，但是能带来特别的艺术风格。对于游戏来说，符合游戏设定的、合理的三维化UI能增强沉浸感，例如《[地铁](https://medium.com/@thewanderlust/considering-the-narrative-in-user-interface-design-for-video-games-c45953c22760)》游戏系列。
+目前，创建三维UI元素需要比二维UI花的时间多得多，因为三维UI的工具链还远远没有成熟。我们暂时只能用三维建模软件（如3DsMAX、Blender）来实现许多三维UI。
 
 
-### Materiality
-UI design utilizes color, highlight, shadow to build hierachy in UI. In MR, UI is inside a 3D engine, so there are opportunities to use the rendering power of the 3D engine to create novel looking UIs.
-
+### 材质
+UI设计一直都在运用颜色、高光、阴影来建立合理的视觉层级关系。在MR中，UI本身就在一个三维渲染引擎里，因此设计师可以有更多机会来充分利用引擎强大的三维渲染能力来渲染不同的材质，以创造一个独特的视觉风格。
 
 
 
