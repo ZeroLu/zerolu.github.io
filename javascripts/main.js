@@ -9,6 +9,7 @@ var contentHandler = {
         $('#tp-output').html(html);
         bodyStyler.styleFix();
         toggleList();
+        toggleGalleryList();
     }
 };
 var bodyStyler = {
@@ -57,6 +58,26 @@ function toggleList(argument) {
     }
 
     console.log(patentListOpen)
+    console.log(btn.html() )
+    
+}
+var galleryListOpen = true;
+function toggleGalleryList(argument) {
+    var galleryList = $("ul.ImageGallery")
+    var btn = $("a#galleryMoreButton")
+    if(!galleryListOpen){
+        // body...
+        galleryList.css('height', 'auto');
+        btn.html("- Less");
+        galleryListOpen = true;
+    }
+    else{
+        galleryList.css('height', '305px');        
+        btn.html("+ More");
+        galleryListOpen = false
+    }
+
+    console.log(galleryListOpen)
     console.log(btn.html() )
     
 }
