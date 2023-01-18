@@ -1,0 +1,29 @@
+<!-- Home_export -->
+<main class="frame" id="Home_export">
+    <div id="head">
+        SUI Projects Database
+    </div>    
+    <!-- SectionTitleMiddle -->
+    <div class="center top text" id="SectionTitleMiddle">SUI Projects Database</div>
+    <div class="projectsWrapper">
+        {{#mainProjects}}
+            <!-- MainProjectCard -->
+            <a class="MainProjectCard" href="{{pageUrl}}">
+                <!-- logo -->
+                <img src="{{logoUrl}}" class="MainImage" style="border-radius: 10px;"></img>
+                {{#projectType}}
+                <!-- type -->
+                <div class="Tag">{{.}}</div>
+                {{/projectType}}
+                <!-- projectName -->
+                <div class="ProjectTitle">{{projectName}}</div>
+                <!-- shortDesc -->
+                <div class="ProjectSubtitle">{{shortDesc}}</div>
+                <!-- ProjectButton -->
+                <div class="ProjectButton">Read More</div>
+            </a>
+        {{/mainProjects}}
+    </div>
+    <!-- FootNote -->
+    <div id="FootNote">©2023 &nbsp; Maxi Labs</div>
+</main>
